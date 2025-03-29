@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: hwb(240 41% 23%);
+            color: white;
+            font: normal 1.2em Arial;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Estou aprendendo JavaScript!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) // string -> número
+        var n2 = Number(window.prompt('Digite outro número: '))
+        // Number.parseInt()        string -> inteiro
+        // Number.parseFloat()      string -> real
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + String(s)) // número -> string
+        // (number + number) para adição
+        // (string + string/number) para concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Usando template string(string formatada)
+    </script>
+</body>
+</html>
