@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <div>
+        <p>Em que país você nasceu?</p>
+        <input type="text" id="txtpais">
+        <input type="button" value="Verificar" id="verif">
+    </div>
+    <div id="res">
+
+    </div>
+    <script>
+        var verif = document.querySelector('input#verif')
+        verif.addEventListener('click', nasc)
+        
+        function nasc() {
+            var txtpais = document.getElementById('txtpais')
+            var res = document.getElementById('res')
+            var pais = txtpais.value
+            res.innerHTML = `<p>Você nasceu em ${pais}</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += 'Você é brasileiro(a)!'
+            } else {
+                res.innerHTML += 'Você é estrangeiro(a)!'
+            }
+        }
+    </script>
+</body>
+</html>
