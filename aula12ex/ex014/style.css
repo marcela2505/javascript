@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(92, 143, 255);
+    background-color: #f4d8a4;
     font: normal 1.2em Arial;
 }
 
@@ -15,6 +15,17 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
 }
 
 footer {
