@@ -17,6 +17,9 @@ function adicionar() {
         soma += n
         res.innerHTML = ''
     }
+    txtnum.value = '' // Esvazia a caixa do input
+    txtnum.focus() // Faz com que o elemento focado receba eventos de teclado e similares por padrão.
+    
 }
 
 function finalizar() {
