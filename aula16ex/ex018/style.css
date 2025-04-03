@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(92, 143, 255);
+    background-color: rgb(144, 30, 53);
     font: normal 1.2em Arial;
 }
 
@@ -9,7 +9,7 @@ header {
 }
 
 h1, footer > p {
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.301);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
 }
 
 section {
