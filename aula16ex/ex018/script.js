@@ -19,7 +19,6 @@ function adicionar() {
     }
     txtnum.value = '' // Esvazia a caixa do input
     txtnum.focus() // Faz com que o elemento focado receba eventos de teclado e similares por padrão.
-    
 }
 
 function finalizar() {
@@ -32,5 +31,4 @@ function finalizar() {
         res.innerHTML += `<p>Somando todos os valores temos ${soma}.</p>`
         res.innerHTML += `<p>A média dos valores digitados é ${soma / numeros.length}.</p>`
     }
-    
 }
