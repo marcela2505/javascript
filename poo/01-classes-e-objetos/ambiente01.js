@@ -6,7 +6,7 @@ class Pessoa {
         this.idade = idade // a primeira 'idade' é a propriedade/atributo e a segunda é o parâmetro
     }
 
-    apresentar() { // Método
+    apresentar() { // Métodos dentro da classe são automaticamente adicionados ao prototype (modelo/base) do objeto
         return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`
     }
 }
