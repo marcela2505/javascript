@@ -1,6 +1,39 @@
-// Manipulação de Objetos
+// Criando Objetos em JS
 
-class Pessoa { // Criando classe base
+
+// Objeto literal
+const pessoa = {
+    nome: 'João',   // Atributo/Propriedade
+    idade: 25,
+    saudacao: function() {   // Método
+        return `Olá, meu nome é ${this.nome}.`
+    }
+}
+console.log(pessoa)
+console.log(pessoa.saudacao())
+
+
+// Usando new Object()
+const carro = new Object()  // 'new Object()' é a mesma coisa que '{}'
+carro.marca = 'Toyota'
+carro.modelo = 'Corolla'
+carro.ano = 2023
+console.log(carro)
+
+
+// Criando uma função construtora (pouco usado)
+function Animal(tipo, som) {
+    this.tipo = tipo
+    this.som = som
+}
+
+const cachorro = new Animal('Cachorro', 'Au Au')
+console.log(cachorro.som)
+console.log(cachorro)
+
+
+// Usando classes (ES6+) (forma mais moderna e recomendada)
+class Pessoa {
     constructor (nome, idade) {
         this.nome = nome
         this.idade = idade
@@ -11,27 +44,6 @@ class Pessoa { // Criando classe base
     }
 }
 
-const pessoa1 = new Pessoa('João', 25) // Criando objeto
-
-// Acessando propriedades (mostrando)
-console.log(pessoa1.nome)
-console.log(pessoa1['idade'])
-
-// Adicionando ou modificando propriedades
-pessoa1.profissao = 'Desenvolvedor'
-pessoa1.idade = 26
-console.log(pessoa1)
-
-// Removendo propriedades
-delete pessoa1.idade
-console.log(pessoa1)
-
-// Iterando sobre um objeto
-for (let chave in pessoa1) {
-    console.log(`${chave} : ${pessoa1[chave]}`)
-}
-
-// Convertendo para array
-console.log(Object.keys(pessoa1))
-console.log(Object.values(pessoa1))
-console.log(Object.entries(pessoa1))
+const maria = new Pessoa('Maria', 30)
+console.log(maria.apresentar())
+console.log(maria)

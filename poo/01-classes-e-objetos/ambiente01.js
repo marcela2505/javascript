@@ -1,49 +1,16 @@
-// Criando Objetos em JS
+// Definindo uma Classe
 
-
-// Objeto literal
-const pessoa = {
-    nome: 'João',   // Atributo/Propriedade
-    idade: 25,
-    saudacao: function() {   // Método
-        return `Olá, meu nome é ${this.nome}.`
-    }
-}
-console.log(pessoa)
-console.log(pessoa.saudacao())
-
-
-// Usando new Object()
-const carro = new Object()  // 'new Object()' é a mesma coisa que '{}'
-carro.marca = 'Toyota'
-carro.modelo = 'Corolla'
-carro.ano = 2023
-console.log(carro)
-
-
-// Criando uma função construtora (pouco usado)
-function Animal(tipo, som) {
-    this.tipo = tipo
-    this.som = som
-}
-
-const cachorro = new Animal('Cachorro', 'Au Au')
-console.log(cachorro.som)
-console.log(cachorro)
-
-
-// Usando classes (ES6+) (forma mais moderna e recomendada)
 class Pessoa {
-    constructor (nome, idade) {
-        this.nome = nome //o primeiro 'nome' é a propriedade e o segundo é o parâmetro
-        this.idade = idade
+    constructor (nome, idade) { // 'constructor()' é o método chamado automaticamente na criação do objeto (instância)
+        this.nome = nome  // 'this' se refere ao objeto atual da classe
+        this.idade = idade // a primeira 'idade' é a propriedade/atributo e a segunda é o parâmetro
     }
 
-    apresentar() {
+    apresentar() { // Método
         return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`
     }
 }
 
-const maria = new Pessoa('Maria', 30)
+const maria = new Pessoa('Maria', 28) // Criando uma instância
 console.log(maria.apresentar())
 console.log(maria)
