@@ -1,4 +1,4 @@
-// Contador de visitas]
+// Contador de visitas (localStorage)
 let visitas = localStorage.getItem("visitas") || 0
 visitas ++
 localStorage.setItem("visitas", visitas)
@@ -16,7 +16,7 @@ if (!nomeSessao) {
     document.getElementById('boasVindas').textContent = `Olá, ${nomeSessao}!`
 }
 
-// Preenchimeto automático do campo nome
+// Preenchimeto automático do campo nome (localStorage)
 const nomeInput = document.getElementById('nome')
 nomeInput.value = localStorage.getItem("nomeForm") || ""
 
@@ -24,7 +24,7 @@ nomeInput.addEventListener('input', (n) => {
     localStorage.setItem("nomeForm", n.target.value)
 })
 
-// Modo Escuro
+// Modo Escuro (localStorage)
 const temaSalvo = localStorage.getItem("tema")
 if (temaSalvo === "dark") {
     document.body.classList.add('dark')
