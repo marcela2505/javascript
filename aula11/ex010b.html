@@ -16,13 +16,13 @@
 
     </div>
     <script>
-        var verif = document.querySelector('input#verif')
+        let verif = document.querySelector('input#verif')
         verif.addEventListener('click', nasc)
         
         function nasc() {
-            var txtpais = document.getElementById('txtpais')
-            var res = document.getElementById('res')
-            var pais = txtpais.value
+            let txtpais = document.getElementById('txtpais')
+            let res = document.getElementById('res')
+            let pais = txtpais.value
             res.innerHTML = `<p>Você nasceu em ${pais}</p>`
             if (pais == 'Brasil') {
                 res.innerHTML += 'Você é brasileiro(a)!'

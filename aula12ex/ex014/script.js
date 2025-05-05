@@ -1,7 +1,7 @@
 function carregar() {
-    var msg = document.getElementById('msg')
-    var img = document.getElementById('imagem')
-    var hora = new Date().getHours()
+    let msg = document.getElementById('msg')
+    let img = document.getElementById('imagem')
+    let hora = new Date().getHours()
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >= 0 && hora < 12) {
         // BOM DIA

@@ -1,5 +1,5 @@
 // Condições aninhadas
-var idade = 67
+let idade = 67
 console.log(`Você tem ${idade} anos.`)
 if (idade < 16) {
     console.log('Não vota')

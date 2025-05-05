@@ -1,6 +1,6 @@
 // Condições múltiplas
-var agora = new Date()
-var diaSem = agora.getDay()
+let agora = new Date()
+let diaSem = agora.getDay()
 /* getDay() retorna os valores:
     0 = Domingo
     1 = Segunda

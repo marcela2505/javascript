@@ -1,14 +1,14 @@
 function verificar() {
-    var ano = new Date().getFullYear()
-    var txtano = document.querySelector('input#txtano')
-    var res = document.querySelector('div#res')
+    let ano = new Date().getFullYear()
+    let txtano = document.querySelector('input#txtano')
+    let res = document.querySelector('div#res')
     if (txtano.value.length == 0 || txtano.value > ano || txtano.value < 1900) {
         alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
-        var radsexo = document.getElementsByName('radsex')
-        var idade = ano - Number(txtano.value)
-        var genero = ''
-        var img = document.createElement('img')
+        let radsexo = document.getElementsByName('radsex')
+        let idade = ano - Number(txtano.value)
+        let genero = ''
+        let img = document.createElement('img')
         img.setAttribute('id', 'foto')
         if (radsexo[0].checked) {
             genero = 'homem'
